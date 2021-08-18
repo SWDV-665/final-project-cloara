@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Home
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,5 +13,29 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <!-- Going to simulate an User Account on the Main Page-->
+  <!-- If logged in, would show recommended recipes based on keywords in database storage-->
+
+  <ion-avatar style='float:right'>
+    <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+  </ion-avatar>
+
+  <hr style="color: purple; width: 50%;">
+
+  <h2 style="text-align: center;">Log in:</h2>
+  <ion-item style='width: 25%; margin: 0 auto; display: block;'>
+    <ion-label>Username</ion-label>
+    <ion-input inputmode="email"></ion-input>
+  </ion-item>
+  
+  <ion-item style='width: 25%; margin: 0 auto; display: block;'>
+    <ion-label>Password</ion-label>
+    <ion-textarea inputmode="Password"></ion-textarea>
+  </ion-item>
+
+  <button type="button" style="width: 10%; margin: 0 auto; display: block;">Log in</button>
+  <hr>
+  <button type="button" style="width: 10%; margin: 0 auto; display: block;">Don't have an account?</button>
+
+  <!-- IN PROGRESS: Set it up so once you log in - the screen changes. based on the button press above-->
 </ion-content>
